@@ -20,9 +20,8 @@ let start = `
   let end = (rate:number) => `
   <figure><img alt="result" src="/images/illustration-thank-you.svg"></figure>
   <span class="badge badge-ghost text-[hsl(25,97%,53%)] mx-auto">You selected ${rate} out of 5</span>
-  <h2 class="card-title text-4xl text-stone-50 text-center">Thank you!</h2>
-    <p class="grow-0 text-center
-    ">We appreciate you taking the time to give a rating. If you ever need more support, 
+  <h2 class="card-title block text-4xl text-stone-50 text-center">Thank you!</h2>
+    <p class="grow-0 text-center">We appreciate you taking the time to give a rating. If you ever need more support, 
     don’t hesitate to get in touch!</p>
   `
   function render(step=istep, rate=irate){
@@ -57,28 +56,3 @@ document.querySelector("#submit")?.addEventListener("click", () =>{
   console.log(false, irate)
   render(false, irate)
 })
-/*
-<!-- Rating state start -->
-
-  How did we do?
-
-  Please let us know how we did with your support request. All feedback is appreciated 
-  to help us improve our offering!
-
-  1 2 3 4 5
-
-  Submit
-
-  <!-- Rating state end -->
-
-  <!-- Thank you state start -->
-
-  You selected <!-- Add rating here --> out of 5
-
-  Thank you!
-
-  We appreciate you taking the time to give a rating. If you ever need more support, 
-  don’t hesitate to get in touch!
-
-  <!-- Thank you state end -->
-  */
